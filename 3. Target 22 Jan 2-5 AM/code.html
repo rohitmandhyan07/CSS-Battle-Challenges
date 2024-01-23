@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>22 Jan Challenge</title>
+    <style>
+          .container{
+    position: relative;
+  }
+  body{
+    background: #024817;
+  }
+  #circle {
+    width: 150px;
+    height: 150px;
+    background: #088540;
+    border-radius:100%;
+    position: fixed;
+    left: 31%;
+    top: 16.6%; 
+    z-index: 1;
+  }
+  .light-green{
+    background:#83CF9D;
+  }
+  .down-U{
+    width:21px;
+    height:43px;
+    position: fixed;
+    z-index: 2;
+    border-radius: 50px 50px 0 0;
+  }
+  #one{
+    left:47.4%;
+    top:32%;
+  }
+  #two{
+    left: 40%;
+    top: 38.7%;
+    transform:rotate(-45deg);
+    height:35px;
+  }
+  #three{
+    left:55%;
+    top:38.5%;
+    transform:rotate(45deg);
+    height:35px;
+    width:20px;
+  }
+  .hexagon{
+    width:34.64px;
+    height: 20px;
+    z-index:2;
+    margin:20px 0;
+    position:fixed;
+    left:45.7%;
+    top:42.26%;
+    transform:rotate(90deg);
+  }
+  .hexagon:before, .hexagon:after {
+      content: '';
+      width: 0;
+      border-left: 17.32px solid transparent;
+      border-right: 17.32px solid transparent;
+      position: absolute;
+    }
+  .hexagon:before{
+    top:-10px;
+    border-bottom: 10px solid #83CF9D;
+  }
+  .hexagon:after{
+    bottom:-10px;
+    border-top: 11px solid #83CF9D;
+  }
+  #rectangle{
+    width:20.5px;
+    height:150px;
+    left:47.5%;
+    top:57.9%;
+    position: fixed;
+    z-index:2;
+  }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="circle"></div>
+        <div class="down-U light-green" id="one"></div>
+        <div class="down-U light-green" id="two"></div>
+        <div class="down-U light-green" id="three"></div>
+        <div class="light-green hexagon"></div>
+        <div class="light-green" id="rectangle"></div>
+      </div>
+</body>
+</html>
